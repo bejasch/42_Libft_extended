@@ -6,7 +6,7 @@
 /*   By: bschneid <bschneid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 10:55:07 by bschneid          #+#    #+#             */
-/*   Updated: 2024/05/23 11:51:28 by bschneid         ###   ########.fr       */
+/*   Updated: 2024/05/27 15:58:52 by bschneid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ typedef struct s_fd_head
 int		ft_atoi(const char *string);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t num, size_t size);
+char	ft_isai(const char *string);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);

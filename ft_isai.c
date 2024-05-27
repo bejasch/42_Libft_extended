@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_isai.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschneid <bschneid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 15:46:53 by bschneid          #+#    #+#             */
-/*   Updated: 2024/05/27 15:56:39 by bschneid         ###   ########.fr       */
+/*   Created: 2024/05/27 15:38:58 by bschneid          #+#    #+#             */
+/*   Updated: 2024/05/27 15:41:37 by bschneid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c)
+char	ft_isai(const char *string)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	if (*string == '-' || *string == '+')
+		string++;
+	while (*string)
+	{
+		if (*string < '0' || *string > '9')
+			return (0);
+		string++;
+	}
+	return (1);
 }

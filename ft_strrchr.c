@@ -6,11 +6,9 @@
 /*   By: bschneid <bschneid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 18:29:36 by bschneid          #+#    #+#             */
-/*   Updated: 2024/04/22 12:14:07 by bschneid         ###   ########.fr       */
+/*   Updated: 2024/05/27 15:56:14 by bschneid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strrchr(const char *string, int c)
 {
