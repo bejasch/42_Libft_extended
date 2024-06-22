@@ -14,6 +14,8 @@ char	ft_isai(const char *string)
 {
 	if (*string == '-' || *string == '+')
 		string++;
+	if (!*string)
+		return (0);
 	while (*string)
 	{
 		if (*string < '0' || *string > '9')
